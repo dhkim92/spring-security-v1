@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/security
+    username: cos1234
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update #create update none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .mustache
+
+
+
+
+
+
